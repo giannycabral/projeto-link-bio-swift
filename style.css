@@ -21,6 +21,7 @@ body {
     overflow: hidden;
 }
 
+/* Vídeo Background */
 #background-video {
     position: absolute;
     right: 0;
@@ -420,5 +421,328 @@ h2 {
 
     100% {
         transform: scale(1);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    /* Ajustes gerais */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .verified-badge {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Ajustes do banner */
+    .banner-content {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Ajustes dos links */
+    .social-links {
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .link-item {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Ajustes da tabela */
+    .stats-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .stats-table th,
+    .stats-table td {
+        padding: 12px;
+        white-space: nowrap;
+        font-size: 0.85rem;
+    }
+
+    .stats-table th:first-child,
+    .stats-table td:first-child {
+        position: sticky;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustes para telas muito pequenas */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .banner-content {
+        padding: 10px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .link-item {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .stats-table th,
+    .stats-table td {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes para telas muito pequenas em paisagem */
+@media (max-height: 480px) and (orientation: landscape) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .verified-badge {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Media Query para smartphones (412x823) */
+@media screen and (max-width: 412px) {
+
+    /* Ajustes do Banner */
+    .banner-content {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 15px;
+    }
+
+    .title-container {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .verified-badge {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Ajustes dos Links */
+    .social-links {
+        gap: 10px;
+        margin-top: 25px;
+        padding: 0 10px;
+    }
+
+    .link-item {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .link-item i {
+        font-size: 1em;
+        margin-right: 6px;
+    }
+
+    /* Ajustes da Seção Estatísticas */
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .stats-table {
+        font-size: 0.7rem;
+    }
+
+    .stats-table th,
+    .stats-table td {
+        padding: 8px 6px;
+    }
+
+    /* Ajustes do Footer */
+    .footer {
+        padding: 12px;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+
+    /* Ajustes específicos da tabela para melhor visualização */
+    .stats-table th:nth-child(1),
+    .stats-table td:nth-child(1) {
+        width: 40px;
+    }
+
+    .stats-table th:nth-child(2),
+    .stats-table td:nth-child(2) {
+        width: 120px;
+    }
+
+    .stats-table th:nth-child(3),
+    .stats-table td:nth-child(3) {
+        width: 80px;
+    }
+
+    .stats-table th:nth-child(4),
+    .stats-table td:nth-child(4) {
+        width: 70px;
+    }
+}
+
+/* Ajustes para modo paisagem */
+@media (max-height: 480px) and (orientation: landscape) {
+
+    /* Layout do Banner */
+    .banner-content {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 20px;
+    }
+
+    /* Container esquerdo */
+    .left-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0;
+    }
+
+    /* Container direito */
+    .right-content {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .title-container {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .verified-badge {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Links */
+    .social-links {
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .link-item {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Seção Estatísticas */
+    .estatisticas-content {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .stats-table th,
+    .stats-table td {
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Media Queries para o vídeo */
+@media (max-aspect-ratio: 16/9) {
+    #background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #background-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 767px) {
+    #background-video {
+        width: auto;
+        height: 100%;
+        object-position: center;
+    }
+}
+
+/* Para modo paisagem em dispositivos móveis */
+@media (max-height: 480px) and (orientation: landscape) {
+    #background-video {
+        width: 100%;
+        height: auto;
+        object-position: center;
     }
 }
