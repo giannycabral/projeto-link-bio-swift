@@ -47,4 +47,4 @@ O site é totalmente responsivo e se adapta a diferentes tamanhos de tela:
 Regiane Cabral ❤️
 
 ## 📸 Preview
-![Gif taylor swit](https://s.duckademy.com/uploads/589b9274af046.gif)
+[](https://github.com/user-attachments/assets/1058060a-e416-489c-9aa7-89568a46696b)
