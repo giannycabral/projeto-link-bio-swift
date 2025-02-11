@@ -111,17 +111,23 @@ h1::after {
 /* Links Sociais */
 .social-links {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    /* Alterado para row */
+    flex-wrap: wrap;
+    /* Permite quebra de linha se necessário */
+    gap: 15px;
     justify-content: center;
+    align-items: center;
     max-width: 768px;
     width: 100%;
     margin: 40px auto 0;
 }
 
 .link-item {
-    width: 100%;
-    padding: 10px;
+    width: auto;
+    /* Alterado de 100% para auto */
+    padding: 10px 20px;
+    /* Ajustado padding horizontal */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
     color: white;
@@ -453,12 +459,12 @@ h2 {
 
     /* Ajustes dos links */
     .social-links {
+        gap: 10px;
         padding: 0 15px;
-        gap: 15px;
     }
 
     .link-item {
-        padding: 12px;
+        padding: 8px 15px;
         font-size: 0.9rem;
     }
 
@@ -508,12 +514,12 @@ h2 {
     }
 
     .social-links {
-        gap: 12px;
+        gap: 8px;
     }
 
     .link-item {
-        padding: 10px;
-        font-size: 0.85rem;
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 
     .stats-table th,
