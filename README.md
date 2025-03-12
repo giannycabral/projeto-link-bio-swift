@@ -41,7 +41,7 @@ O site é totalmente responsivo e se adapta a diferentes tamanhos de tela:
 ## 🖥️ Como Executar
 1. Clone o repositório
 2. Abra o arquivo `index.html` em seu navegador
-3. Ou acesse através do GitHub Pages: [Link do seu site]
+3. Ou acesse através do GitHub Pages: [Website](https://giannycabral.github.io/projeto-link-bio-swift/)
 
 ## 👩‍💻 Desenvolvido por
 Regiane Cabral ❤️
